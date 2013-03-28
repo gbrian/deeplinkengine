@@ -1,0 +1,20 @@
+
+.dl_result{
+	clear: both;
+}
+
+.dl_result .left{
+	float: left;
+}
+
+.dl_result img{
+	width: 90px;
+}
+
+.dl_result price{
+	
+}
+
+.dl_result .dl_hotel_desc{
+	margin-left: 100px;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_1_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>DeeplinkEngine-Portlets</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
+		<css-class-wrapper>DeeplinkEngine-Portlets-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>hotelresults</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>true</instanceable>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>hotelresults-portlet</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>Deeplink Hotel Search</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			deeplink hotel search -portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>multidatetimepicker</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<header-portlet-css>/css/mdp.css</header-portlet-css>
+		<header-portlet-javascript>/js/datepicker/jquery-ui.multidatespicker.js</header-portlet-javascript>
+		<header-portlet-javascript>/js/datepicker/jquery-ui.multidatespicker.util.js</header-portlet-javascript>
+		<css-class-wrapper>
+			multidatetimepicker-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>calendarmanager</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>/js/calendar/main.js</footer-portlet-javascript>
+		<css-class-wrapper>calendarmanager-portlet</css-class-wrapper>
+	</portlet>
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+</liferay-portlet-app>

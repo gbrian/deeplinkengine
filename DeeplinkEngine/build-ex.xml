@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="DeeplinkEngine-ex" basedir="." default="jar">
+	<import file="build.xml" />
+	
+	<target depends="clean,build-project" name="jar">
+		<mkdir dir="build/jar" />
+		<jar destfile="bin/jar/DeeplinkEngine.jar" basedir="bin">
+		</jar>
+		<copy file="bin/jar/DeeplinkEngine.jar" todir="D:\libs\java\DeeplinkEngine"></copy>
+	</target>
+</project>
+
+	

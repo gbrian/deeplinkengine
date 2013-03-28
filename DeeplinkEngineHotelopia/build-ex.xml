@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="DeeplinkEngineHotelopia-ex" basedir="." default="jar">
+	<import file="build.xml" />
+	
+	<target depends="clean,build-project" name="jar">
+		<jar destfile="bin/jar/DeeplinkEngineHotelopia.jar" basedir="bin">
+		</jar>
+		<copy file="bin/jar/DeeplinkEngineHotelopia.jar" todir="D:\libs\java\DeeplinkEngine"></copy>
+	</target>
+</project>
+
+	

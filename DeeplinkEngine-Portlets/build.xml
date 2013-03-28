@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+
+<project name="DeeplinkEngine-Portlets-portlet" basedir="." default="deploy-with-dependencies">
+	<import file="../build-common-portlet.xml" />
+	<property name="libs" value="D:\libs\java" />
+	<property name="target" value="D:\Tools\liferay-portal-6.1.1-ce-ga2\tomcat-7.0.27\webapps\ROOT\WEB-INF\lib" />
+
+	<target name="deploy-with-dependencies">
+		<!--antcall target="build-refprojects"></antcall-->
+		<antcall target="copy-dependencies"></antcall>
+		<antcall target="deploy"></antcall>
+	</target>
+	<target name="copy-dependencies">
+		<copy todir="${target}">
+			<fileset dir="${libs}/DeeplinkEngine">
+			</fileset>
+		</copy>
+		<copy file="${libs}/jsoup-1.7.2.jar" todir="${target}">
+		</copy>
+		<copy file="${libs}/google-gson-2.2.2/gson-2.2.2.jar" todir="${target}">
+		</copy>
+	</target>
+	<property name="DeeplinkEngineBooking.location" value="D:/workspace/DeeplinkEngineBooking"/>
+    <property name="DeeplinkEngineHotelopia.location" value="D:/workspace/DeeplinkEngineHotelopia"/>
+    <property name="DeeplinkEngine.location" value="D:/workspace/DeeplinkEngine"/>
+	<target name="build-refprojects" description="Build all projects which reference this project. Useful to propagate changes.">
+		<ant antfile="build-ex.xml" dir="${DeeplinkEngine.location}" inheritAll="false" target="jar"/>
+		<ant antfile="build-ex.xml" dir="${DeeplinkEngineBooking.location}" inheritAll="false" target="jar"/>
+		<ant antfile="build-ex.xml" dir="${DeeplinkEngineHotelopia.location}" inheritAll="false" target="jar"/>
+	</target>
+</project>  
