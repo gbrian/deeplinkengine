@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="test/BookingProviderTest.java" kind="src" path="test">
+		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/libs/java/google-gson-2.2.2/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/libs/java/jsoup-1.7.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DeeplinkEngine"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
