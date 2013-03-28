@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_ZpZe8I4eEeK5osH4S5IaRw" name="DLUMLModel">
+  <packageImport xmi:id="_ZpZe8Y4eEeK5osH4S5IaRw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_rdedMJV0EeKcA5x_YvRlgQ">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/StandardL2.profile.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Model" xmi:id="_XjFdQI4fEeK5osH4S5IaRw" name="Providers">
+    <packagedElement xmi:type="uml:Class" xmi:id="_dLGOoI4fEeK5osH4S5IaRw" name="HOTELOPIA">
+      <generalization xmi:id="_qpS5II4fEeK5osH4S5IaRw" general="_nm7UUI4fEeK5osH4S5IaRw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hLgwEI4fEeK5osH4S5IaRw" name="BOOKING">
+      <generalization xmi:id="_5Ux2II4fEeK5osH4S5IaRw" general="_0-6CEI4fEeK5osH4S5IaRw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jls6kI4fEeK5osH4S5IaRw" name="LOGITRAVEL">
+      <generalization xmi:id="_AVFQII4gEeK5osH4S5IaRw" general="_6sM8EI4fEeK5osH4S5IaRw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_nm7UUI4fEeK5osH4S5IaRw" name="www.hotelopia.es"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_0-6CEI4fEeK5osH4S5IaRw" name="www.booking.com"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_6sM8EI4fEeK5osH4S5IaRw" name="www.logitravel.es"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_xJKqII4gEeK5osH4S5IaRw" name="FromDEEPLINK ENGINEtoProviders" client="_J9EooI4hEeK5osH4S5IaRw" supplier="_XjFdQI4fEeK5osH4S5IaRw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_FRsUEI4gEeK5osH4S5IaRw" clientDependency="_VwmhEI4hEeK5osH4S5IaRw" name="CMS-PORTAL">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JUy9II4gEeK5osH4S5IaRw" name="JAVA">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZBgtoI4gEeK5osH4S5IaRw" name="LIFERAY"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_K-dCkI4gEeK5osH4S5IaRw" name="PHP">
+      <packagedElement xmi:type="uml:Class" xmi:id="_cSsxkI4gEeK5osH4S5IaRw" name="WORDPRESS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l6GJoI4gEeK5osH4S5IaRw" name="DRUPAL"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_yRkcoI4gEeK5osH4S5IaRw" name="FromJS DLENGINEtoCMS-PORTAL DLENGINE" client="_ra3qkI4gEeK5osH4S5IaRw" supplier="_RBlCoI4gEeK5osH4S5IaRw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_J9EooI4hEeK5osH4S5IaRw" clientDependency="_xJKqII4gEeK5osH4S5IaRw" name="DEEPLINK ENGINE">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ra3qkI4gEeK5osH4S5IaRw" clientDependency="_yRkcoI4gEeK5osH4S5IaRw" name="JS DLENGINE">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mIHocI4pEeK5osH4S5IaRw" name="DeeplinkEngine">
+        <generalization xmi:id="_4J1hcI4pEeK5osH4S5IaRw" general="_1AubcI4pEeK5osH4S5IaRw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ov0DcI4pEeK5osH4S5IaRw" clientDependency="_xkT-8I4pEeK5osH4S5IaRw" name="HotelSearchPortlet"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sb7v4I4pEeK5osH4S5IaRw" clientDependency="_yC_fAI4pEeK5osH4S5IaRw" name="HotelResultsPortlet"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_xkT-8I4pEeK5osH4S5IaRw" name="FromHotelSearchPortlettoDeeplinkEngine" client="_ov0DcI4pEeK5osH4S5IaRw" supplier="_mIHocI4pEeK5osH4S5IaRw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_yC_fAI4pEeK5osH4S5IaRw" name="FromHotelResultsPortlettoDeeplinkEngine" client="_sb7v4I4pEeK5osH4S5IaRw" supplier="_mIHocI4pEeK5osH4S5IaRw"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_1AubcI4pEeK5osH4S5IaRw" name="IDeeplinkEngineJS"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RBlCoI4gEeK5osH4S5IaRw" name="CMS-PORTAL DLENGINE">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YsKEgI4nEeK5osH4S5IaRw" name="JAVA">
+        <packageImport xmi:id="_a_PE8I4oEeK5osH4S5IaRw" importedPackage="_ZVHFcI4oEeK5osH4S5IaRw"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_lNxK8I4nEeK5osH4S5IaRw" name="LIFERAY">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qGGy4I4nEeK5osH4S5IaRw" name="LiferayPortlet">
+            <ownedComment xmi:id="_rnshcI4nEeK5osH4S5IaRw" annotatedElement="_qGGy4I4nEeK5osH4S5IaRw">
+              <body>Represents the liferay portlet SDK</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_zeUfcI4nEeK5osH4S5IaRw" clientDependency="_9T-V8I4nEeK5osH4S5IaRw _8e3oAI4pEeK5osH4S5IaRw" name="DLHotelSearch">
+            <ownedComment xmi:id="_3WMI4I4nEeK5osH4S5IaRw" annotatedElement="_zeUfcI4nEeK5osH4S5IaRw">
+              <body>Deeplink engine search portlet</body>
+            </ownedComment>
+            <generalization xmi:id="_-RKW8I4nEeK5osH4S5IaRw" general="_qGGy4I4nEeK5osH4S5IaRw"/>
+            <generalization xmi:id="_w-Zq8I4oEeK5osH4S5IaRw" general="_it1vYI4oEeK5osH4S5IaRw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_49RbcI4nEeK5osH4S5IaRw" name="DLUtilities">
+            <ownedComment xmi:id="_6a9hcI4nEeK5osH4S5IaRw" annotatedElement="_49RbcI4nEeK5osH4S5IaRw">
+              <body>Shared code between potlets</body>
+            </ownedComment>
+            <generalization xmi:id="_xZ3e8I4oEeK5osH4S5IaRw" general="_d6wa4I4oEeK5osH4S5IaRw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_9T-V8I4nEeK5osH4S5IaRw" name="FromDLSearchtoDLUtilities" client="_zeUfcI4nEeK5osH4S5IaRw" supplier="_49RbcI4nEeK5osH4S5IaRw"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_FCvYcI4oEeK5osH4S5IaRw" clientDependency="_JfOx4I4oEeK5osH4S5IaRw _84CV8I4pEeK5osH4S5IaRw" name="DLHotelResults">
+            <generalization xmi:id="_InPZ8I4oEeK5osH4S5IaRw" general="_qGGy4I4nEeK5osH4S5IaRw"/>
+            <generalization xmi:id="_wYF44I4oEeK5osH4S5IaRw" general="_it1vYI4oEeK5osH4S5IaRw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_JfOx4I4oEeK5osH4S5IaRw" name="FromDLHotelResultstoDLUtilities" client="_FCvYcI4oEeK5osH4S5IaRw" supplier="_49RbcI4nEeK5osH4S5IaRw"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_8e3oAI4pEeK5osH4S5IaRw" name="FromDLHotelSearchtoIDeeplinkEngineJS" client="_zeUfcI4nEeK5osH4S5IaRw" supplier="_1AubcI4pEeK5osH4S5IaRw"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_84CV8I4pEeK5osH4S5IaRw" name="FromDLHotelResultstoIDeeplinkEngineJS" client="_FCvYcI4oEeK5osH4S5IaRw" supplier="_1AubcI4pEeK5osH4S5IaRw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZVHFcI4oEeK5osH4S5IaRw" name="COMMON">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_d6wa4I4oEeK5osH4S5IaRw" name="IDLUtilities">
+          <ownedOperation xmi:id="_oSrQ8I4oEeK5osH4S5IaRw" name="requestPage"/>
+          <ownedOperation xmi:id="_qtK9cI4oEeK5osH4S5IaRw" name="loadSettings"/>
+          <ownedOperation xmi:id="_ry52cI4oEeK5osH4S5IaRw" name="saveSettings"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_it1vYI4oEeK5osH4S5IaRw" name="IDLPortlet">
+          <ownedOperation xmi:id="_kxr2cI4oEeK5osH4S5IaRw" name="doView"/>
+          <ownedOperation xmi:id="_lsgf8I4oEeK5osH4S5IaRw" name="doEdit"/>
+          <ownedOperation xmi:id="_m1cd8I4oEeK5osH4S5IaRw" name="doHelp"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mgCNQJU8EeKEcOOXuCC4bA" name="TOOLS DLENGINE">
+      <packagedElement xmi:type="uml:Package" xmi:id="_skXHMJU8EeKEcOOXuCC4bA" name="offers">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xODPIJU8EeKEcOOXuCC4bA" name="Offer" isAbstract="true">
+          <ownedAttribute xmi:id="_36nNwJU8EeKEcOOXuCC4bA" name="calendar" type="_clYskJU9EeKEcOOXuCC4bA" association="_36ob4JU8EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_36nNwZU8EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_36nNwpU8EeKEcOOXuCC4bA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_G1Yj8JU9EeKEcOOXuCC4bA" name="class1" type="_XRlQoJU9EeKEcOOXuCC4bA" association="_G1ZLAJU9EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1Yj8ZU9EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1Yj8pU9EeKEcOOXuCC4bA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_qWDKoJU-EeKEcOOXuCC4bA" name="offerResult" type="_oTk8kJU-EeKEcOOXuCC4bA" association="_qWDxsJU-EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qWDKoZU-EeKEcOOXuCC4bA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qWDKopU-EeKEcOOXuCC4bA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_CmxwgJV0EeKcA5x_YvRlgQ" name="Property1" visibility="public">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ETKZ0JV0EeKcA5x_YvRlgQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ETVY8JV0EeKcA5x_YvRlgQ" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ETX1MJV0EeKcA5x_YvRlgQ">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Z04O0JV0EeKcA5x_YvRlgQ" name="id" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wDCTEJV0EeKcA5x_YvRlgQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wDEIQJV0EeKcA5x_YvRlgQ" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_wDIZsJV0EeKcA5x_YvRlgQ">
+              <value xsi:nil="true"/>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedOperation xmi:id="__3xmsJU-EeKEcOOXuCC4bA" name="calculate: void" isAbstract="true"/>
+          <ownedOperation xmi:id="_Ft2CMJU_EeKEcOOXuCC4bA" name="getResults: List&lt;T>" isAbstract="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_36ob4JU8EeKEcOOXuCC4bA" name="clendars" memberEnd="_36ob4ZU8EeKEcOOXuCC4bA _36nNwJU8EeKEcOOXuCC4bA">
+          <ownedEnd xmi:id="_36ob4ZU8EeKEcOOXuCC4bA" name="offer" type="_xODPIJU8EeKEcOOXuCC4bA" association="_36ob4JU8EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_36ob4pU8EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_36ob45U8EeKEcOOXuCC4bA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_G1ZLAJU9EeKEcOOXuCC4bA" name="providers" memberEnd="_G1ZLAZU9EeKEcOOXuCC4bA _G1Yj8JU9EeKEcOOXuCC4bA">
+          <ownedEnd xmi:id="_G1ZLAZU9EeKEcOOXuCC4bA" name="offer" type="_xODPIJU8EeKEcOOXuCC4bA" association="_G1ZLAJU9EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G1ZLApU9EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1ZLA5U9EeKEcOOXuCC4bA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_XRlQoJU9EeKEcOOXuCC4bA" name="Provider"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_clYskJU9EeKEcOOXuCC4bA" name="Calendar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kIU5kJU9EeKEcOOXuCC4bA" name="SearchSettings">
+          <ownedAttribute xmi:id="_mYYQoJU9EeKEcOOXuCC4bA" name="class1">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mYYQoZU9EeKEcOOXuCC4bA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mYYQopU9EeKEcOOXuCC4bA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_siiFwJU9EeKEcOOXuCC4bA" name="destination" type="_qYyyEJU9EeKEcOOXuCC4bA" association="_siis0JU9EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_siiFwZU9EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_siiFwpU9EeKEcOOXuCC4bA" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qYyyEJU9EeKEcOOXuCC4bA" name="Destination"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_siis0JU9EeKEcOOXuCC4bA" name="destinations" memberEnd="_siis0ZU9EeKEcOOXuCC4bA _siiFwJU9EeKEcOOXuCC4bA">
+          <ownedEnd xmi:id="_siis0ZU9EeKEcOOXuCC4bA" name="searchSettings" type="_kIU5kJU9EeKEcOOXuCC4bA" association="_siis0JU9EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_siis0pU9EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_siis05U9EeKEcOOXuCC4bA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_oTk8kJU-EeKEcOOXuCC4bA" name="OfferResult"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_qWDxsJU-EeKEcOOXuCC4bA" name="results" memberEnd="_qWDxsZU-EeKEcOOXuCC4bA _qWDKoJU-EeKEcOOXuCC4bA">
+          <ownedEnd xmi:id="_qWDxsZU-EeKEcOOXuCC4bA" name="offer" type="_xODPIJU8EeKEcOOXuCC4bA" association="_qWDxsJU-EeKEcOOXuCC4bA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qWDxspU-EeKEcOOXuCC4bA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qWDxs5U-EeKEcOOXuCC4bA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vsIegJU-EeKEcOOXuCC4bA" name="AccommodationResult">
+          <generalization xmi:id="_xDItsJU-EeKEcOOXuCC4bA" general="_oTk8kJU-EeKEcOOXuCC4bA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_y0aeEJU-EeKEcOOXuCC4bA" name="AccommodationOffer">
+          <generalization xmi:id="_2iZLsJU-EeKEcOOXuCC4bA" general="_xODPIJU8EeKEcOOXuCC4bA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_VwmhEI4hEeK5osH4S5IaRw" name="FromCMS-PORTALtoDEEPLINK ENGINE" client="_FRsUEI4gEeK5osH4S5IaRw" supplier="_J9EooI4hEeK5osH4S5IaRw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CsGqgI4jEeK5osH4S5IaRw" name="A_User_search hotels" memberEnd="_CsXwQI4jEeK5osH4S5IaRw _CslysI4jEeK5osH4S5IaRw">
+    <ownedEnd xmi:id="_CsXwQI4jEeK5osH4S5IaRw" name="search hotels" type="_AqVnEI4jEeK5osH4S5IaRw" isUnique="false" association="_CsGqgI4jEeK5osH4S5IaRw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CskkkI4jEeK5osH4S5IaRw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CslLoI4jEeK5osH4S5IaRw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_CslysI4jEeK5osH4S5IaRw" name="user" type="_9Yfb0I4iEeK5osH4S5IaRw" isUnique="false" association="_CsGqgI4jEeK5osH4S5IaRw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CsqEIY4jEeK5osH4S5IaRw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsqEII4jEeK5osH4S5IaRw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_gW64II4kEeK5osH4S5IaRw" name="Use cases">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qbIIAI4kEeK5osH4S5IaRw" name="create results page: PORTAL-CMS Administration">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_xnj5gI4kEeK5osH4S5IaRw" name="Portal admin"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_z7o08I4kEeK5osH4S5IaRw" name="create search page">
+        <include xmi:id="__25GAI4kEeK5osH4S5IaRw" name="Include_install dlengine" addition="_5j1MgI4kEeK5osH4S5IaRw"/>
+        <include xmi:id="_AOnpgI4lEeK5osH4S5IaRw" name="Include_configure search portlet" addition="_9glV8I4kEeK5osH4S5IaRw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2HaI8I4kEeK5osH4S5IaRw" name="A_Portal admin_create search page" memberEnd="_2HeaYI4kEeK5osH4S5IaRw _2HjS4Y4kEeK5osH4S5IaRw">
+        <ownedEnd xmi:id="_2HeaYI4kEeK5osH4S5IaRw" name="create search page" type="_z7o08I4kEeK5osH4S5IaRw" isUnique="false" association="_2HaI8I4kEeK5osH4S5IaRw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Hir0I4kEeK5osH4S5IaRw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HjS4I4kEeK5osH4S5IaRw" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_2HjS4Y4kEeK5osH4S5IaRw" name="portal admin" type="_xnj5gI4kEeK5osH4S5IaRw" isUnique="false" association="_2HaI8I4kEeK5osH4S5IaRw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2HoycI4kEeK5osH4S5IaRw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2HoLYI4kEeK5osH4S5IaRw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_5j1MgI4kEeK5osH4S5IaRw" name="install dlengine"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_9glV8I4kEeK5osH4S5IaRw" name="configure portlet"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_hJBOAI4lEeK5osH4S5IaRw" name="create results page">
+        <include xmi:id="_k0TM8I4lEeK5osH4S5IaRw" name="Include_install dlengine" addition="_5j1MgI4kEeK5osH4S5IaRw"/>
+        <include xmi:id="_qJQfcI4lEeK5osH4S5IaRw" name="Include_configure portlet" addition="_9glV8I4kEeK5osH4S5IaRw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_imxlcI4lEeK5osH4S5IaRw" name="A_Portal admin_create results page" memberEnd="_im3sEI4lEeK5osH4S5IaRw _im9LoI4lEeK5osH4S5IaRw">
+        <ownedEnd xmi:id="_im3sEI4lEeK5osH4S5IaRw" name="create results page" type="_hJBOAI4lEeK5osH4S5IaRw" isUnique="false" association="_imxlcI4lEeK5osH4S5IaRw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_im79gI4lEeK5osH4S5IaRw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_im8kkI4lEeK5osH4S5IaRw" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_im9LoI4lEeK5osH4S5IaRw" name="portal admin" type="_xnj5gI4kEeK5osH4S5IaRw" isUnique="false" association="_imxlcI4lEeK5osH4S5IaRw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_inCrMI4lEeK5osH4S5IaRw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_inCEII4lEeK5osH4S5IaRw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_srUpAI4kEeK5osH4S5IaRw" name="Deeplink engine actions">
+      <packageImport xmi:id="_Mh-RgI4lEeK5osH4S5IaRw" importedPackage="_qbIIAI4kEeK5osH4S5IaRw"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_GQhMcI4jEeK5osH4S5IaRw" name="load cms-portal">
+        <ownedComment xmi:id="_7i2ogI4lEeK5osH4S5IaRw" annotatedElement="_GQhMcI4jEeK5osH4S5IaRw">
+          <body>Request to the portal engine for the search page</body>
+        </ownedComment>
+        <include xmi:id="_VUhXII4jEeK5osH4S5IaRw" name="Include_load search portlet" addition="_Kq9XcI4jEeK5osH4S5IaRw"/>
+        <include xmi:id="_6eGxgI4mEeK5osH4S5IaRw" name="Include_load results portlet" addition="_lKRngI4mEeK5osH4S5IaRw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZgS0AI4jEeK5osH4S5IaRw" name="load cms-portal dlengine">
+        <ownedComment xmi:id="_Enl_cI4mEeK5osH4S5IaRw" annotatedElement="_ZgS0AI4jEeK5osH4S5IaRw">
+          <body>Specific deeplink engine is loaded by a portal-cms</body>
+        </ownedComment>
+        <extend xmi:id="_zTo2QI4jEeK5osH4S5IaRw" name="Extend_load search portlet" extendedCase="_Kq9XcI4jEeK5osH4S5IaRw" extensionLocation="_qFE08I4jEeK5osH4S5IaRw"/>
+        <extend xmi:id="_7kmfgI4mEeK5osH4S5IaRw" name="Extend_load results portlet" extendedCase="_lKRngI4mEeK5osH4S5IaRw" extensionLocation="_0ajToI4mEeK5osH4S5IaRw"/>
+        <extensionPoint xmi:id="_vL6y8I4jEeK5osH4S5IaRw" name="client load"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LkpRII4mEeK5osH4S5IaRw" name="Search">
+        <packagedElement xmi:type="uml:Package" xmi:id="_NsJJII4mEeK5osH4S5IaRw" name="Hotels">
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_AqVnEI4jEeK5osH4S5IaRw" name="search hotels">
+            <ownedComment xmi:id="_VTRkgI4kEeK5osH4S5IaRw" annotatedElement="_AqVnEI4jEeK5osH4S5IaRw">
+              <body>Allows to an user searching over a set of accommodation providers.&#xD;
+Loads from the portal-cms used engine a home page with the search portlet&#xD;
+an shows the interface to the user allowing to introduce the searching criteria.</body>
+            </ownedComment>
+            <include xmi:id="_WFUh8I4jEeK5osH4S5IaRw" name="Include_load cms-portal" addition="_GQhMcI4jEeK5osH4S5IaRw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_Kq9XcI4jEeK5osH4S5IaRw" name="load search portlet">
+            <ownedComment xmi:id="_BR5O8I4mEeK5osH4S5IaRw" annotatedElement="_Kq9XcI4jEeK5osH4S5IaRw">
+              <body>Portal initializes the search portlet</body>
+            </ownedComment>
+            <extensionPoint xmi:id="_qFE08I4jEeK5osH4S5IaRw" name="portal-cms engine init"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_gBODAI4mEeK5osH4S5IaRw" name="view search results">
+            <include xmi:id="_s-r_AI4mEeK5osH4S5IaRw" name="Include_load cms-portal" addition="_GQhMcI4jEeK5osH4S5IaRw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_io_WgI4mEeK5osH4S5IaRw" name="A_User_view search results" memberEnd="_ipDn8I4mEeK5osH4S5IaRw _ipJukI4mEeK5osH4S5IaRw">
+            <ownedEnd xmi:id="_ipDn8I4mEeK5osH4S5IaRw" name="view search results" type="_gBODAI4mEeK5osH4S5IaRw" isUnique="false" association="_io_WgI4mEeK5osH4S5IaRw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ipIgcI4mEeK5osH4S5IaRw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ipJHgI4mEeK5osH4S5IaRw" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_ipJukI4mEeK5osH4S5IaRw" name="user" type="_9Yfb0I4iEeK5osH4S5IaRw" isUnique="false" association="_io_WgI4mEeK5osH4S5IaRw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ipP1MI4mEeK5osH4S5IaRw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ipPOII4mEeK5osH4S5IaRw" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_lKRngI4mEeK5osH4S5IaRw" name="load results portlet">
+            <extensionPoint xmi:id="_0ajToI4mEeK5osH4S5IaRw" name="portal-cms engine init"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_9Yfb0I4iEeK5osH4S5IaRw" name="User"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_awXo4I4wEeKANfaxWpj4FA" name="Activities">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_cHdCgI4uEeKANfaxWpj4FA" name="Search hotels" node="_WefkAI4wEeKANfaxWpj4FA _KnOE8I45EeKANfaxWpj4FA _jXSFQI45EeKANfaxWpj4FA _rVyz8I45EeKANfaxWpj4FA">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Lp1_kI45EeKANfaxWpj4FA" name="ControlFlow1" source="_WefkAI4wEeKANfaxWpj4FA" target="_KnOE8I45EeKANfaxWpj4FA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Lp3NsI45EeKANfaxWpj4FA" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Lp30wI45EeKANfaxWpj4FA"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jX2tAI45EeKANfaxWpj4FA" name="ControlFlow2" source="_KnOE8I45EeKANfaxWpj4FA" target="_jXSFQI45EeKANfaxWpj4FA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_jX37II45EeKANfaxWpj4FA" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_jX37IY45EeKANfaxWpj4FA"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2VmwcI45EeKANfaxWpj4FA" name="ControlFlow3" source="_jXSFQI45EeKANfaxWpj4FA" target="_rVyz8I45EeKANfaxWpj4FA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_2Vn-kI45EeKANfaxWpj4FA" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_2Vn-kY45EeKANfaxWpj4FA"/>
+      </edge>
+      <node xmi:type="uml:InitialNode" xmi:id="_WefkAI4wEeKANfaxWpj4FA" name="InitialNode1" outgoing="_Lp1_kI45EeKANfaxWpj4FA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_KnOE8I45EeKANfaxWpj4FA" name="search page" outgoing="_jX2tAI45EeKANfaxWpj4FA" incoming="_Lp1_kI45EeKANfaxWpj4FA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_jXSFQI45EeKANfaxWpj4FA" name="load search portlet" outgoing="_2VmwcI45EeKANfaxWpj4FA" incoming="_jX2tAI45EeKANfaxWpj4FA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rVyz8I45EeKANfaxWpj4FA" name="load portlet settings" incoming="_2VmwcI45EeKANfaxWpj4FA"/>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:id="_ZpZe8o4eEeK5osH4S5IaRw">
+    <eAnnotations xmi:id="_ZpZe844eEeK5osH4S5IaRw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L2#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
