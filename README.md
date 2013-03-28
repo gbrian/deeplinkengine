@@ -1,5 +1,5 @@
-DeeplinkEngine
-==============
+DeeplinkEngine (by touris-tic)
+==============================
 
 This repository contains all the projects developed to crate a set of libraries 
 and portlets to create a set of utilities for CMS systems to integrate tourism affiliate programs.
